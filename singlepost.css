@@ -1,0 +1,16 @@
+p {
+    color: black;
+    margin-right: 50 px;
+    margin-left: 50 px;
+    outline: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+a {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}

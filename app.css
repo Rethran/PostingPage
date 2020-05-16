@@ -1,0 +1,16 @@
+p {
+    text-align: left;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+h4:hover {
+    color: #220cee;
+}
+
+h4:link {
+    color: #265301;
+}
