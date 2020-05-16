@@ -26,55 +26,75 @@ class Users extends React.Component {
     }
 
     render() {
+        { var userdata = this.state.jsonuserdata };
         return ( <
-            div > { " " } {
-                this.state.loading || !this.state.jsonuserdata ? ( <
+            div >
+
+            {
+                this.state.loading || !userdata ? ( <
                     div > loading... < /div>
                 ) : ( <
                     div >
+
                     <
-                    h3 > user information < /h3>{" "} <
+                    h3 >
+                    User information <
+                    /h3> <
                     ul >
                     <
                     p >
-                    username: { this.state.jsonuserdata[this.state.userid].username } { " " } <
-                    /p>{" "} <
-                    p >
-                    full name: { this.state.jsonuserdata[this.state.userid].name } { " " } <
-                    /p>{" "} <
-                    p >
-                    phone number: { this.state.jsonuserdata[this.state.userid].phone } <
+                    username: { userdata[this.state.userid].username } <
                     /p> <
-                    p > email: { this.state.jsonuserdata[this.state.userid].email } < /p> <
                     p >
-                    user 's website:{" "} { this.state.jsonuserdata[this.state.userid].website } <
+                    full name: { userdata[this.state.userid].name } <
+                    /p> <
+                    p >
+                    phone number: { userdata[this.state.userid].phone } <
+                    /p> <
+                    p >
+                    email: { userdata[this.state.userid].email } <
+                    /p> <
+                    p >
+                    user 's website: { userdata[this.state.userid].website } <
                     /p> <
                     /ul> <
-                    h3 > User location < /h3>{" "} <
+                    h3 >
+                    User location <
+                    /h3> <
                     ul >
                     <
                     p >
-                    city: { this.state.jsonuserdata[this.state.userid].address.city } { " " } <
-                    /p>
-                    street: { " " } { this.state.jsonuserdata[this.state.userid].address.street } { " " } <
+                    city: { userdata[this.state.userid].address.city } <
+                    /p> <
                     p >
-                    zipcode: { " " } { this.state.jsonuserdata[this.state.userid].address.zipcode } { " " } <
-                    /p>{" "} <
+                    street: { userdata[this.state.userid].address.street } <
+                    /p>
+
+                    <
+                    p >
+                    zipcode: { userdata[this.state.userid].address.zipcode } <
+                    /p> <
                     /ul> <
                     h3 > Company < /h3> <
                     ul >
                     <
                     p >
-                    Company name: { " " } { this.state.jsonuserdata[this.state.userid].company.name } { " " } <
-                    /p>
-                    catchPhrase: { " " } { this.state.jsonuserdata[this.state.userid].company.catchPhrase } { " " } <
+                    Company name: { userdata[this.state.userid].company.name } <
+                    /p> <
                     p >
-                    bs: { this.state.jsonuserdata[this.state.userid].company.bs } { " " } <
-                    /p>{" "} <
-                    /ul> <
+                    catchPhrase: { userdata[this.state.userid].company.catchPhrase } <
+                    /p>
+
+                    <
+                    p >
+                    bs: { userdata[this.state.userid].company.bs } <
+                    /p> <
+                    /ul>
+
+                    <
                     /div>
                 )
-            } { " " } <
+            } <
             /div>
         );
     }

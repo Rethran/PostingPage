@@ -11,6 +11,12 @@ class FetchPost extends React.Component {
     };
 
     async componentDidMount() {
+        {
+            /*
+                this component fetch asynchronously posts from url and stores it as state
+                
+            */
+        }
         const url = "https://jsonplaceholder.typicode.com/posts";
 
         const response = await fetch(url);
