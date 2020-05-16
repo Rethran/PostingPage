@@ -36,7 +36,7 @@ class FetchPost extends React.Component {
                         this.state.jsondata.map(post => ( <
                             Link to = { `/post/${post.id}` } >
                             <
-                            h4 > post { post.id } < /h4>
+                            h4 > Post { post.id } < /h4>
 
                             <
                             p > { post.title } < /p> <

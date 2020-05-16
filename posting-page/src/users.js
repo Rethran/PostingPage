@@ -43,19 +43,19 @@ class Users extends React.Component {
                     ul >
                     <
                     p >
-                    username: { userdata[this.state.userid].username } <
+                    Username: { userdata[this.state.userid].username } <
                     /p> <
                     p >
-                    full name: { userdata[this.state.userid].name } <
+                    Full name: { userdata[this.state.userid].name } <
                     /p> <
                     p >
-                    phone number: { userdata[this.state.userid].phone } <
+                    Phone number: { userdata[this.state.userid].phone } <
                     /p> <
                     p >
-                    email: { userdata[this.state.userid].email } <
+                    Email: { userdata[this.state.userid].email } <
                     /p> <
                     p >
-                    user 's website: { userdata[this.state.userid].website } <
+                    User 's website: { userdata[this.state.userid].website } <
                     /p> <
                     /ul> <
                     h3 >
@@ -64,15 +64,15 @@ class Users extends React.Component {
                     ul >
                     <
                     p >
-                    city: { userdata[this.state.userid].address.city } <
+                    City: { userdata[this.state.userid].address.city } <
                     /p> <
                     p >
-                    street: { userdata[this.state.userid].address.street } <
+                    Street: { userdata[this.state.userid].address.street } <
                     /p>
 
                     <
                     p >
-                    zipcode: { userdata[this.state.userid].address.zipcode } <
+                    Zipcode: { userdata[this.state.userid].address.zipcode } <
                     /p> <
                     /ul> <
                     h3 > Company < /h3> <
@@ -82,12 +82,12 @@ class Users extends React.Component {
                     Company name: { userdata[this.state.userid].company.name } <
                     /p> <
                     p >
-                    catchPhrase: { userdata[this.state.userid].company.catchPhrase } <
+                    CatchPhrase: { userdata[this.state.userid].company.catchPhrase } <
                     /p>
 
                     <
                     p >
-                    bs: { userdata[this.state.userid].company.bs } <
+                    Bs: { userdata[this.state.userid].company.bs } <
                     /p> <
                     /ul>
 

@@ -35,33 +35,33 @@ class Singlepost extends React.Component {
         }
         //here is content of webpage for post/{postid}
     render() {
-        { var posts = this.state.jsonpostdata };
+        { var posts = this.state.jsonpostdata }; { var users = this.state.jsonuserdata };
+
         return (
 
             <
-            div > { " " } {
-                !this.state.jsonuserdata ||
-                    this.state.loading ||
-                    !posts ? ( <
-                        div > loading... < /div>
-                    ) : ( <
-                        div >
-                        <
-                        Link to = { `/user/${posts[this.state.postid].userId}` } >
+            div > {!users ||
+                this.state.loading ||
+                !posts ? ( <
+                    div > loading... < /div>
+                ) : ( <
+                    div >
+                    <
+                    Link to = { `/user/${posts[this.state.postid].userId}` } >
 
-                        <
-                        h2 > {
-                            this.state.jsonuserdata[
-                                posts[this.state.postid].userId - 1
-                            ].username
-                        } <
-                        /h2> <
-                        /Link> <
-                        h3 > Post < /h3> <
-                        p > { posts[this.state.postid].body } < /p> <
-                        /div>
-                    )
-            } { " " } <
+                    <
+                    h2 > {
+                        users[
+                            posts[this.state.postid].userId - 1
+                        ].username
+                    } <
+                    /h2> <
+                    /Link> <
+                    h3 > Post < /h3> <
+                    p > { posts[this.state.postid].body } < /p> <
+                    /div>
+                )
+            } <
             /div>
         );
     }

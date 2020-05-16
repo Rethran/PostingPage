@@ -10,8 +10,11 @@ import App from "./App";
 
 import Users from "./users";
 
-import Singlepost from "./singlepost";
-
+import Singlepost from "./singlepost"; {
+    /*
+      this is where dynamic routing happens
+    */
+}
 const routing = ( <
     Router >
     <
