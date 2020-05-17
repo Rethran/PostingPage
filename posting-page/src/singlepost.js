@@ -2,7 +2,6 @@ import React from "react";
 import "./singlepost.css";
 import { BrowserRouter as Router, Link } from "react-router-dom";
 
-
 class Singlepost extends React.Component {
     //some statements for futher use
     state = {
@@ -40,29 +39,21 @@ class Singlepost extends React.Component {
         return (
 
             <
-            div > {!users ||
-                this.state.loading ||
-                !posts ? ( <
-                    div > loading... < /div>
-                ) : ( <
-                    div >
+            div > {!users || this.state.loading || !posts ? ( < div > loading... < /div>) : ( < div >
                     <
                     Link to = { `/user/${posts[this.state.postid].userId}` } >
-
                     <
-                    h2 > {
-                        users[
-                            posts[this.state.postid].userId - 1
-                        ].username
-                    } <
-                    /h2> <
-                    /Link> <
-                    h3 > Post < /h3> <
-                    p > { posts[this.state.postid].body } < /p> <
+                    h2 > { users[posts[this.state.postid].userId - 1].username } <
+                    /h2>  <
+                    /Link>  <
+                    h3 >
+                    Post <
+                    /h3>  <
+                    p > { posts[this.state.postid].body } <
+                    /p>  <
                     /div>
                 )
-            } <
-            /div>
+            } < /div>
         );
     }
 }

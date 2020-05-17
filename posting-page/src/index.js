@@ -15,8 +15,7 @@ import Singlepost from "./singlepost"; {
       this is where dynamic routing happens
     */
 }
-const routing = ( <
-    Router >
+const routing = ( < Router >
     <
     div >
     <
@@ -32,8 +31,8 @@ const routing = ( <
     <
     Route path = "/post/:id"
     component = { Singlepost }
-    /> <
-    /div> <
+    /> </div >
+    <
     /Router>
 );
 
