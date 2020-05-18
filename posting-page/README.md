@@ -12,6 +12,7 @@ In the project directory, you can run:
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### `Purpose`
 
 This app purpose is to use urls which contains JSON data and displays post Title in frontpage.
 When you click post title you get post body and username of the post maker.
